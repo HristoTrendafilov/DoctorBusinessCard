@@ -1,0 +1,42 @@
+.membership-card {
+  width: 40rem;
+}
+
+.membership-card .card-header {
+  color: white;
+  background: var(--primary-color);
+}
+
+.membership-card .membership-submit-btn {
+  width: 200px;
+}
+
+#sketch {
+  width: 100%;
+  height: 100px;
+}
+
+#sketch > canvas {
+  border: 1px solid black;
+}
+
+.button-group {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  width: 100%;
+}
+
+.button-group > button {
+  flex-basis: 50%;
+}
+
+@media (max-width: 300px) {
+  .button-group {
+    flex-direction: column;
+  }
+}
+
+#sign-modal-error {
+  display: none;
+}

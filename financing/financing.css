@@ -1,0 +1,8 @@
+.ef-card .card-header {
+  color: white;
+  background: var(--primary-color);
+}
+
+.ef-card .ef-submit-btn {
+  width: 200px;
+}

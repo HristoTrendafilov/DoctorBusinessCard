@@ -1,0 +1,55 @@
+.media-about-us-card {
+  border: 2px solid var(--secondary-color);
+}
+
+.media-about-us-card-header {
+  height: 200px;
+}
+
+.media-about-us-card-header img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.media-about-us-card-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.fancy {
+  --b: 7px;
+  --w: 30vw;
+  --g: 40px;
+  --c: var(--primary-color);
+
+  width: fit-content;
+  padding: 0 1em;
+  border: 4px solid;
+  color: #fff;
+  background: conic-gradient(from 45deg at left, var(--c) 25%, #0000 0) 0,
+    conic-gradient(from -135deg at right, var(--c) 25%, #0000 0) 100%;
+  background-size: 51% 100%;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  border-image: linear-gradient(
+      #0000 calc(50% - var(--b) / 2),
+      var(--c) 0 calc(50% + var(--b) / 2),
+      #0000 0
+    )
+    1/0 var(--w) / calc(var(--w) + var(--g));
+  margin-inline: auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+
+@media (max-width: 660px) {
+  .fancy {
+    --g: -5px;
+  }
+}

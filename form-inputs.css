@@ -1,0 +1,164 @@
+/* Text start */
+.text-input-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 11px;
+}
+
+.text-input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 8px 10px;
+}
+
+.text-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.text-input-label {
+  position: absolute;
+  left: 13px;
+  top: -10px;
+  font-size: 15px;
+  color: lightslategrey;
+  background: linear-gradient(transparent 44%, white 42%) no-repeat;
+  padding: 0 3px;
+}
+/* Text end */
+
+/* Textarea start */
+.textarea-wrapper {
+  position: relative;
+  margin-bottom: 11px;
+}
+
+.textarea-input:focus {
+  outline: none;
+  border: 1px solid var(--primary-color);
+}
+
+.textarea-input {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  padding: 9px;
+}
+
+.textarea-label {
+  position: absolute;
+  left: 24px;
+  top: -10px;
+  font-size: 15px;
+  background: white;
+  padding: 0 3px;
+  background: linear-gradient(transparent 44%, white 42%) no-repeat;
+  color: lightslategrey;
+}
+/* Textarea end */
+
+/* Checkbox start */
+.checkbox-wrapper {
+  display: flex;
+  align-items: start;
+  gap: 7px;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+
+.checkbox-wrapper .checkbox-label {
+  cursor: pointer;
+}
+
+.checkbox-wrapper .checkbox-input {
+  height: 17px;
+  min-width: 17px;
+}
+/* Checkbox end */
+
+/* File start */
+.file-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 11px;
+}
+
+.file-input-label {
+  position: absolute;
+  left: 13px;
+  top: -12px;
+  font-size: 15px;
+  color: lightslategrey;
+  background: linear-gradient(transparent 44%, white 42%) no-repeat;
+  padding: 0 3px;
+  z-index: 2;
+}
+
+.file-input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.file-input-text {
+  height: 42px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  pointer-events: none;
+  /* font-size: 0.8rem; */
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 5px;
+}
+
+.input-wrapper > .input-text-wrapper {
+  flex-basis: 70%;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.input-wrapper > button {
+  flex-basis: 30%;
+}
+
+.input-text-wrapper {
+  position: relative;
+}
+
+.input-text-wrapper > button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 42px;
+  width: 45px;
+}
+
+@media (max-width: 500px) {
+  .file-input-text {
+    font-size: 0.8rem;
+  }
+
+  .input-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .input-wrapper > .input-text-wrapper {
+    flex-basis: 100%;
+  }
+
+  .input-wrapper > button {
+    flex-basis: 100%;
+  }
+}
+/* File end */
